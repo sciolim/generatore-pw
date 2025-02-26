@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Generatore di Password</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Generatore di Password</h1>
+        <label for="length">Lunghezza Password: <span id="lengthValue">8</span></label>
+        <input type="range" id="length" min="1" max="20" value="8">
+        
+        <label for="uppercase">
+            <input type="checkbox" id="uppercase" checked> Lettere maiuscole
+        </label>
+        
+        <label for="lowercase">
+            <input type="checkbox" id="lowercase" checked> Lettere minuscole
+        </label>
+        
+        <label for="numbers">
+            <input type="checkbox" id="numbers" checked> Numeri
+        </label>
+        
+        <label for="symbols">
+            <input type="checkbox" id="symbols"> Simboli speciali
+        </label>
+
+        <button id="generate">Genera Password</button>
+        <div id="result" class="result"></div>
+        <button id="copy">Copia Password</button>
+        
+        <footer>
+            <p>&copy; 2025 Mario Scioli. Tutti i diritti riservati.</p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
